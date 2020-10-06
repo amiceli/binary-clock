@@ -34,7 +34,7 @@ To build project :
 
 To run binary file : 
 
-    chmod 777 redmine-report
+    chmod 777 binary-clock
 
 ~~~bash
 ./redmine-report -s
