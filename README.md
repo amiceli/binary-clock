@@ -37,5 +37,5 @@ To run binary file :
     chmod 777 binary-clock
 
 ~~~bash
-./redmine-report -s
+./binary-clock -s
 ~~~
