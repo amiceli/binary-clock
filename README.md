@@ -37,10 +37,5 @@ To run binary file :
     chmod 777 redmine-report
 
 ~~~bash
-./redmine-report \
-    --token=<your-redmine-token> \
-    --url=<redmine-url> \
-    --username=<redmine-username>
+./redmine-report -s
 ~~~
-
-**NB** : currently open commands run `open <url>`, it works on MacOS only.
