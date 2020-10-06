@@ -1,0 +1,1 @@
+pp  -M Term::ANSIColor -M Getopt::Long -M Term::ReadKey -o binary-clock index.pl

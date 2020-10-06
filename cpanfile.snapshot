@@ -1,0 +1,8 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  TermReadKey-2.38
+    pathname: J/JS/JSTOWE/TermReadKey-2.38.tar.gz
+    provides:
+      Term::ReadKey 2.38
+    requirements:
+      ExtUtils::MakeMaker 6.58
