@@ -73,7 +73,7 @@ sub getPadTop {
 sub printClock {
     my $self        = shift;
     my @binaryClock = @{ $_[0] };
-    my $withSecond  = shift;
+    my $withSecond  = $_[1];
 
     my $padLeft = $self->getPadLeft();
     my $padTop  = $self->getPadTop();
