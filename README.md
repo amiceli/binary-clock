@@ -25,6 +25,10 @@ carton exec -- perl index.pl --s
 ~~~
 
 `--s` option set seconds mode, by default clock is updated every minute.
+`--c` option set square color.
+
+**Allowed colors are red, green, yellow, blue, magenta, cyan, white. Default color is red.**
+
 
 ## Build
 
@@ -36,6 +40,8 @@ To run binary file :
 
     chmod 777 binary-clock
 
+Example : 
+
 ~~~bash
-./binary-clock -s
+./binary-clock --s --color cyan
 ~~~

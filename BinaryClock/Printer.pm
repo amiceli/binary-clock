@@ -9,11 +9,17 @@ use Data::Dumper;
 sub new {
     my $class = shift;
 
-    my $self = {};
+    my $self = {
+        color => shift
+    };
 
     bless $self, $class;
 
     return $self;
+}
+
+sub allowedColors {
+    return ('red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white')
 }
 
 sub printSquare {
@@ -28,7 +34,7 @@ sub printSquare {
 sub printActiveSquare {
     my $self = shift;
 
-    print color('red on_red');
+    print color($self->{color});
     print "██";
     print color('reset');
     print " ";
