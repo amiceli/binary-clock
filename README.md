@@ -26,6 +26,7 @@ carton exec -- perl index.pl --s
 
 `--s` option set seconds mode, by default clock is updated every minute.
 `--c` option set square color.
+`--r`option set rainbow mode, color will change each second/minute.
 
 **Allowed colors are red, green, yellow, blue, magenta, cyan, white. Default color is red.**
 

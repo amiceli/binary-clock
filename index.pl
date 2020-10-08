@@ -6,10 +6,12 @@ use BinaryClock::Printer;
 
 my $withSecond;
 my $color;
+my $rainbow;
 
 GetOptions( 
     'second' => \$withSecond, 
-    'color=s' => \$color
+    'color=s' => \$color,
+    'rainbow' => \$rainbow
 );
 
 if (!grep /$color/, Printer::allowedColors) {
@@ -26,7 +28,20 @@ if (not defined $color) {
     $color = "$color on_$color";
 }
 
+my @colors = Printer::allowedColors
+my $currentColor = 0;
+
 while (1) {
+
+    if ($currentColor == scalar @colors - 1) {
+        $currentColor = 0;
+    }
+
+    if ($rainbow) {
+        $color = $colors[$currentColor];
+        $color = "$color on_$color";
+    }
+
     my $printer = new Printer($color);
     my $clock   = new Clock();
     my @arr     = $clock->getBinaryClockAsArray();
@@ -38,5 +53,8 @@ while (1) {
     } else {
         sleep 60;
     }
+
+    $currentColor++;
+
 }
 
