@@ -6,3 +6,18 @@ DISTRIBUTIONS
       Term::ReadKey 2.38
     requirements:
       ExtUtils::MakeMaker 6.58
+  Test-Mock-Simple-0.10
+    pathname: T/TA/TANK/Test-Mock-Simple-0.10.tar.gz
+    provides:
+      Test::Mock::Simple 0.10
+    requirements:
+      ExtUtils::MakeMaker 0
+  Test-MockTime-0.17
+    pathname: D/DD/DDICK/Test-MockTime-0.17.tar.gz
+    provides:
+      Test::MockTime 0.17
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      Time::Local 0
+      Time::Piece 1.08
